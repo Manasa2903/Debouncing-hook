@@ -1,7 +1,7 @@
 import { useCallback, useState } from "react";
 
-const useDebounce = (time = 1000, text = "") => {
-    const [debounceVal, setDebounceVal] = useState(text);
+const useDebounce = (time = 1000, initialText = "") => {
+    const [debounceVal, setDebounceVal] = useState(initialText);
     const [timeoutVal, setTimeoutVal] = useState("");
 
     const handleDebounceVal = useCallback(
