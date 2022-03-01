@@ -12,6 +12,8 @@ const useDebounce = (time = 1000, initialText = "") => {
         }, [time, timeoutVal]
     );
 
+    console.log("ss");
+
     return [debounceVal, handleDebounceVal];
 };
 
